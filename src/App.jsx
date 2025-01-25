@@ -1,9 +1,17 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "./pages/Home";
+
+const router = createBrowserRouter([
+  {
+    path: '/', 
+    element: <HomePage />
+  },
+])
+
 function App() {
 
   return (
-    <>
-      <h1>Linkedin Local Abeokuta</h1>
-    </>
+    <RouterProvider router={router} />
   )
 }
 
