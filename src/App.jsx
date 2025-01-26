@@ -1,17 +1,20 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Suspense } from 'react';
 import HomePage from "./pages/Home";
-
-const router = createBrowserRouter([
-  {
-    path: '/', 
-    element: <HomePage />
-  },
-])
+import Admin from "./pages/Admin";
+import Spinner from './Components/Spinner/Spinner';
 
 function App() {
 
   return (
-    <RouterProvider router={router} />
+    <Router>
+      <Suspense fallback={<Spinner />}>
+        <Routes>
+          <Route exact path="/" Component={HomePage} />
+          <Route path="/admin" Component={Admin} />
+        </Routes>
+      </Suspense>
+    </Router>
   )
 }
 
