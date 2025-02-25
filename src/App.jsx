@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Suspense } from 'react';
 import HomePage from "./pages/Home";
 import Admin from "./pages/Admin";
+import './App.css'
 import Spinner from './Components/Spinner/Spinner';
 
 function App() {
