@@ -1,14 +1,17 @@
-import Navbar from "../Components/Navbar";
-import { Header } from "../Components/Header";
+import Header from "../Components/Header";
 import "../App.css";
 import Star from "../Components/Star";
-import {Instagram, Norfolk, Facebook, Apple, Github, Phone, Mail, Iglogo, Linkedin, Facebooksolid, Twitter} from "../Components/Icons";
+import {
+  Instagram,
+  Norfolk,
+  Facebook,
+  Apple,
+  Github,
+} from "../Components/Icons";
 
 const HomePage = () => {
-    return (
-        <>
-      <Header />
-
+  return (
+    <>
       <div className="hero">
         <h1>
           LinkedIn Local Abeokuta<span>1.0</span>
@@ -18,8 +21,15 @@ const HomePage = () => {
       <section className="hero-2">
         <div>
           <h2>Where Connections Spark Opportunities</h2>
-          <p>Join top entrepreneurs and professionals in shaping Abeokuta’s business future.</p>
-          <button className="buttons">Register Now</button>
+          <p>
+            Join top entrepreneurs and professionals in shaping Abeokuta’s
+            business future.
+          </p>
+          <a href="/register">
+            <button className="buttons">
+              Register Now
+            </button>
+          </a>
         </div>
         <img src="img/LLA-Visual2.png" alt="" />
       </section>
@@ -66,24 +76,35 @@ const HomePage = () => {
         </div>
       </section>
       <section className="expectSection">
-        <img src="/img/conference-img.jpg" alt="a photo of-a seminar with a diverse group" />
+        <img
+          src="/img/conference-img.jpg"
+          alt="a photo of-a seminar with a diverse group"
+        />
         <div>
           <h2>What to expect:</h2>
           <p>
-          LINKEDIN LOCAL ABEOKUTA 1.0 seeks to bridge the gap
-           between ideation and reality while bringing people
-           together and helping them see possibilities.
+            LINKEDIN LOCAL ABEOKUTA 1.0 seeks to bridge the gap between ideation
+            and reality while bringing people together and helping them see
+            possibilities.
           </p>
           <p>
-          It aims to unite an estimated 3,500 attendees (in-person and via livestream),
-          including professionals, entrepreneurs, techies, creatives, freelancers, change-makers.
-          This event will include:
+            It aims to unite an estimated 3,500 attendees (in-person and via
+            livestream), including professionals, entrepreneurs, techies,
+            creatives, freelancers, change-makers. This event will include:
           </p>
           <ul>
-            <li><Star /> Keynote Speeches</li>
-            <li><Star /> Couch Sessions</li>
-            <li><Star /> Mentor Exchange Sections</li>
-            <li><Star /> Panel Sessions</li>
+            <li>
+              <Star /> Keynote Speeches
+            </li>
+            <li>
+              <Star /> Couch Sessions
+            </li>
+            <li>
+              <Star /> Mentor Exchange Sections
+            </li>
+            <li>
+              <Star /> Panel Sessions
+            </li>
           </ul>
           <button className="buttons">Read More</button>
         </div>
@@ -111,53 +132,22 @@ const HomePage = () => {
             <img src="/img/cta-img-3.jpg" alt="" />
           </div>
         </div>
-        <button className="buttons">Register Now</button>
+        <a href="/register">
+          <button className="buttons">Register Now</button>
+        </a>
       </section>
       <section className="feedback">
         <h2>We Value Your Feedback!</h2>
         <form action="">
           <label htmlFor="">
             <p>Kindly take a moment to tell us what you think</p>
-            <textarea name="" id="">
-
-            </textarea>
+            <textarea name="" id=""></textarea>
           </label>
           <button className="buttons">Share my feedback</button>
         </form>
       </section>
-      <footer>
-        <div>
-          <div>
-            <img src="img/Logo-2.png" className="footerLogo" alt="" />
-            <p>
-            Supported and Encouraged by LinkedIn, LinkedIn Local™ is a registered trademark of LinkedIn Corporation and is used under license. However, LinkedIn Local™events are not sponsored or operated by LinkedIn.
-            </p>
-          </div>
-          <div>
-            <h3>Contact Us</h3>
-            <ul>
-              <li><Phone /> <span>08162751236</span></li>
-              <li><Phone /> <span>08162751236</span></li>
-              <li><Mail /> <span>llabeokuta@gmail.com</span></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Follow us on</h3>
-            <div className="socials">
-              <Iglogo />
-              <Linkedin />
-              <Facebooksolid />
-              <Twitter />
-            </div>
-          </div>
-        </div>
-        <p>
-          &copy; LinkedIn Local Abeokuta 2025.  All Rights Reserved.
-        </p>
-      </footer>
     </>
-        
-    )
-}
+  );
+};
 
 export default HomePage;

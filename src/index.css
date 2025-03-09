@@ -23,6 +23,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Montserrat", sans-serif;
   }
   
   body{
@@ -32,6 +33,12 @@
   #root > *{
     padding-left: var(--padding-inline);
     padding-right: var(--padding-inline);
+  }
+
+  #root{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   
   button{

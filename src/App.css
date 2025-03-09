@@ -40,6 +40,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    padding: 64px 1rem;
     z-index: 0;
   }
   
@@ -72,8 +73,8 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    padding-top: 66px;
-    padding-bottom: 128px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     background: #345792;
     color: #FFFFFF;
   }
@@ -98,6 +99,7 @@
     object-fit: cover;
     display: block;
     align-self: stretch;
+    border-radius: 8px;
   }
   
   .convener-bio{
@@ -149,10 +151,10 @@
     border-radius: 4px;
     border: none;
     background: #345792;
-    margin-top: 32px;
+    /* margin-top: 32px; */
     color: #FFF;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -210,7 +212,7 @@
     background: #F4F4F4;
     box-shadow: 0px 10px 34.9px 0px rgba(0, 0, 0, 0.25);
     padding-top: 32px;
-    padding-bottom: 142px;
+    padding-bottom: 32px;
   }
 
   .brandSection > div{
@@ -333,6 +335,7 @@
 
   footer{
     padding: 32px;
+    margin-top: auto;
     background: #345792;
     color: #FFF;
     text-align: center;
@@ -381,6 +384,75 @@
     width: 120px;
   }
 
+
+  .nameContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+  }
+  
+
+  .formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 0 64px 0;
+    align-items: center;
+    justify-content: center;
+    background: #F4F4F4;
+  }
+
+  .formContainer h1{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .formContainer .buttons{
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .formContainer h2{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .formContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    background:#FFF;
+    padding: 16px;
+    box-shadow: #B1C0D4 2px 3px 10px;
+  }
+
+  .formContainer form label{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+
+  .formContainer form label input{
+    border: 2px solid #D4D4D4;
+    padding: 12px 0;
+    padding-left: 16px;
+    border-radius: .5rem;
+  }
+
   @media (max-width: 600px) {
     .menuBar nav{
       display: none;
@@ -409,6 +481,10 @@
     .cta-section > div{
       flex-wrap: wrap;
       justify-content: center;
+    }
+
+    .nameContainer label{
+      width: 100%;
     }
   }
   @media (min-width: 1000px) {

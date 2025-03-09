@@ -1,9 +1,11 @@
 import '../App.css';
 
-export const Header = () => {
+const Header = () => {
   return (
     <header className="menuBar">
-      <img src='img/Logo.png' alt='logo' />
+      <a href="/">
+        <img src='img/Logo.png' alt='logo' />
+      </a>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -16,3 +18,5 @@ export const Header = () => {
     </header>
   )
 }
+
+export default Header
