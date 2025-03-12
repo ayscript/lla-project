@@ -26,7 +26,7 @@ const Footer = () => {
             <li>
               <Mail /> <span>llabeokuta@gmail.com</span>
             </li>
-          </ul>
+          </ul> 
         </div>
         <div>
           <h3>Follow us on</h3>

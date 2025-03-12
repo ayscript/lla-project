@@ -14,7 +14,7 @@ const HomePage = () => {
     <>
       <div className="hero">
         <h1>
-          LinkedIn Local Abeokuta<span>1.0</span>
+          LinkedIn Local Abeokuta <span>1.0</span>
         </h1>
       </div>
 
@@ -26,9 +26,7 @@ const HomePage = () => {
             business future.
           </p>
           <a href="/register">
-            <button className="buttons">
-              Register Now
-            </button>
+            <button className="buttons">Register Now</button>
           </a>
         </div>
         <img src="img/LLA-Visual2.png" alt="" />
