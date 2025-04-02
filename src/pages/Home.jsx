@@ -25,9 +25,12 @@ const HomePage = () => {
             Join top entrepreneurs and professionals in shaping Abeokuta’s
             business future.
           </p>
-          <a href="/register">
-            <button className="buttons">Register Now</button>
-          </a>
+          <button
+            className="buttons"
+            onClick={() => open("https://tix.africa/lla ")}
+          >
+            Register Now
+          </button>
         </div>
         <img src="img/LLA-Visual2.png" alt="" />
       </section>
@@ -104,10 +107,10 @@ const HomePage = () => {
               <Star /> Panel Sessions
             </li>
           </ul>
-          <button className="buttons">Read More</button>
+          {/* <button className="buttons">Read More</button> */}
         </div>
       </section>
-      <section className="brandSection">
+      {/* <section className="brandSection">
         <h2>Our Partners and Sponsors</h2>
         <div>
           <Instagram />
@@ -116,7 +119,7 @@ const HomePage = () => {
           <Apple />
           <Github />
         </div>
-      </section>
+      </section> */}
       <section className="cta-section">
         <h2>Limited Slots Available! Secure Your Spot Today</h2>
         <div>
@@ -130,11 +133,14 @@ const HomePage = () => {
             <img src="/img/cta-img-3.jpg" alt="" />
           </div>
         </div>
-        <a href="/register">
-          <button className="buttons">Register Now</button>
-        </a>
+        <button
+          className="buttons"
+          onClick={() => open("https://tix.africa/lla ")}
+        >
+          Register Now
+        </button>
       </section>
-      <section className="feedback">
+      {/* <section className="feedback">
         <h2>We Value Your Feedback!</h2>
         <form action="">
           <label htmlFor="">
@@ -143,7 +149,7 @@ const HomePage = () => {
           </label>
           <button className="buttons">Share my feedback</button>
         </form>
-      </section>
+      </section> */}
     </>
   );
 };

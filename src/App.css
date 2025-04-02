@@ -105,8 +105,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
   max-width: 500px;
+}
+
+.convener-bio p{
+  line-height: 32px;
 }
 
 .hero-2 {
